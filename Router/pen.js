@@ -7,7 +7,7 @@ router.get('/',(req,res)=>{
    });
 });
 
-router.post('/',(req,res)=>{
+router.post('/',(req,res,next)=>{
     // res.status(200).json({
          // msg: "this is a post request of pen",
     // });

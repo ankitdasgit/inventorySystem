@@ -6,10 +6,22 @@ const PencilSchema= require('../model/pencilSchema');
 
 
 router.get("/", (req, res) => {
-  res.status(200).json({
-    msg: "this is a pencil get request",
-  });
+  // res.status(200).json({
+  //   msg: "this is a pencil get request",
+  // });
+  PencilSchema.find()
+  .then(result=>{
+    res.status(200).json({
+      pencilData : result
+    });
+  })
+  .catch(err=>{
+    console.log(err);
+  })
+
 });
+
+
 
 router.post("/", (req, res) => {
   // res.status(200).json({

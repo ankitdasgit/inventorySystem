@@ -5,4 +5,5 @@ const PencilSchema = new mongoose.Schema({
   quantity: Number,
 });
 
+
 module.exports = new mongoose.model("pencil",PencilSchema);

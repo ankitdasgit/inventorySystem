@@ -18,8 +18,7 @@ router.post("/", (req, res) => {
   const pencils = new PencilSchema({
     itemName: req.body.itemName,
     price: req.body.price,
-    quantity: req.body.quantity,
-  
+    quantity: req.body.quantity
   });
 
   console.log(req.body);
